@@ -47,7 +47,7 @@ jobs:
     
     - name: Update deployment image tag
       run: |
-        sed -i "s|image: ghcr.io/revathibala/hello-world-app:.*|image: ghcr.io/revathibala/hello-world-app:${{ github.sha }}|" k8s/deployment.yaml
+        sed -i "s|image: ghcr.io/suresh-0322/hello-world-app:.*|image: ghcr.io/suresh-0322/hello-world-app:${{ github.sha }}|" k8s/deployment.yaml
 
     # - name: Commit and push updated manifest
     #   env:
